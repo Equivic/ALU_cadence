@@ -35,14 +35,11 @@
 (envOpts lsusp) nil
 (envOpts macroModelEnable) nil
 (envOpts macroModelList) nil
-(envOpts mapFirstSubnodeForNet) nil
 (envOpts other_opts) ""
 (envOpts paramRangeCheckFile) ""
 (envOpts pllPlugin) ""
 (envOpts pllWizardinfo) ""
-(envOpts poloNameMapDBDir) ""
 (envOpts port_order) "sch"
-(envOpts preserveSubcktTermNamesByOrder) nil
 (envOpts printComments) (nil nil)
 (envOpts restart) ""
 (envOpts rptOptionToggle) ""

@@ -46,7 +46,6 @@ analysis(tran fields transtrobe) ""
 analysis(tran options FinalOpOtherParameters) ""
 analysis(tran options InfotimesOtherParameters) ""
 analysis(tran options acnames) nil
-analysis(tran options actimepair) nil
 analysis(tran options actimes) nil
 analysis(tran options additionalOptions) ""
 analysis(tran options additionalParams) ""
@@ -68,11 +67,8 @@ analysis(tran options emirformat) ""
 analysis(tran options emirstart) ""
 analysis(tran options emirstop) ""
 analysis(tran options enableThermal) nil
-analysis(tran options enableThermalNode) nil
 analysis(tran options faultCurrentRun) ""
 analysis(tran options faultDoNominal) nil
-analysis(tran options faultDoSampling) nil
-analysis(tran options faultInfoAnalysis) nil
 analysis(tran options faultOptionsEnabled) nil
 analysis(tran options faultRunCount) ""
 analysis(tran options faultTimePoints) ""
@@ -82,11 +78,6 @@ analysis(tran options faultextraoptions) ""
 analysis(tran options faultleadtime) ""
 analysis(tran options faultmaxiters) ""
 analysis(tran options faultmethod) ""
-analysis(tran options faultsamplemethod) ""
-analysis(tran options faultsamplenum) ""
-analysis(tran options faultsampleratio) ""
-analysis(tran options faultsamplingoption) ""
-analysis(tran options faultseed) ""
 analysis(tran options faultstart) ""
 analysis(tran options faultstep) ""
 analysis(tran options faultstop) ""
@@ -97,9 +88,7 @@ analysis(tran options flushpoints) ""
 analysis(tran options flushtime) ""
 analysis(tran options ic) ""
 analysis(tran options infoname) nil
-analysis(tran options infotimepair) nil
 analysis(tran options infotimes) nil
-analysis(tran options instanceField) ""
 analysis(tran options irefbins) nil
 analysis(tran options irefmax) ""
 analysis(tran options iterNum) "2"
@@ -121,8 +110,6 @@ analysis(tran options relref) ""
 analysis(tran options resTriseRpt) "No"
 analysis(tran options restart) ""
 analysis(tran options save) ""
-analysis(tran options saveChannelOnly) "No"
-analysis(tran options saveLayer) ""
 analysis(tran options saveclock) ""
 analysis(tran options savefile) ""
 analysis(tran options saveperiod) ""
@@ -138,9 +125,6 @@ analysis(tran options step) ""
 analysis(tran options strobedelay) ""
 analysis(tran options strobeoutput) ""
 analysis(tran options strobeperiod) ""
-analysis(tran options thermalModelFile) ""
-analysis(tran options thermalNodeTable) (nil choices nil value nil)
-analysis(tran options thermalPinName) ""
 analysis(tran options thermalTimeStep) "0"
 analysis(tran options thermalmethod) "Steady State"
 analysis(tran options threshold) "0.0"

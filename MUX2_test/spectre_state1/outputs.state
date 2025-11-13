@@ -9,6 +9,10 @@ tmp1 = make_sevOutputStruct()
 tmp1 = (ncons nil)
 )
 tmp1->inLastSet = nil
+tmp1->updatedScriptFile = nil
+tmp1->implicit = nil
+tmp1->uniqueName = "/y"
+tmp1->inValidObject = nil
 tmp1->name = nil
 tmp1->expression = nil
 tmp1->signal = "/y"
@@ -20,7 +24,6 @@ tmp1->internalName = nil
 tmp1->masterName = nil
 tmp1->masterScriptFile = nil
 tmp1->saveScriptFile = nil
-tmp1->updatedScriptFile = nil
 tmp1->saveMasterScriptFile = nil
 tmp1->isReferenced = nil
 tmp1->lastEvalTime = nil
@@ -48,7 +51,6 @@ tmp1->value = nil
 tmp1->plot = 't
 tmp1->save = nil
 tmp1->march = nil
-tmp1->implicit = nil
 tmp1->index = 1
 tmp1->timeStamp = nil
 tmp1->graphType = nil
@@ -56,8 +58,6 @@ tmp1->yaxisLabel = nil
 tmp1->label = nil
 tmp1->yaxisUnit = nil
 tmp1->waveSpec = nil
-tmp1->uniqueName = "/y"
-tmp1->inValidObject = nil
 list(tmp1)
 )
 _outputList = nconc( _outputList savedComponent) 
@@ -72,6 +72,10 @@ tmp1 = (ncons nil)
 )
 tmp1->inLastSet = nil
 tmp1->definedIn = "XYZ"
+tmp1->updatedScriptFile = nil
+tmp1->implicit = nil
+tmp1->uniqueName = "/a"
+tmp1->inValidObject = nil
 tmp1->name = nil
 tmp1->expression = nil
 tmp1->signal = "/a"
@@ -83,7 +87,6 @@ tmp1->internalName = nil
 tmp1->masterName = nil
 tmp1->masterScriptFile = nil
 tmp1->saveScriptFile = nil
-tmp1->updatedScriptFile = nil
 tmp1->saveMasterScriptFile = nil
 tmp1->isReferenced = nil
 tmp1->lastEvalTime = nil
@@ -111,7 +114,6 @@ tmp1->value = nil
 tmp1->plot = 't
 tmp1->save = nil
 tmp1->march = nil
-tmp1->implicit = nil
 tmp1->index = 2
 tmp1->timeStamp = nil
 tmp1->graphType = nil
@@ -119,8 +121,6 @@ tmp1->yaxisLabel = nil
 tmp1->label = nil
 tmp1->yaxisUnit = nil
 tmp1->waveSpec = nil
-tmp1->uniqueName = "/a"
-tmp1->inValidObject = nil
 list(tmp1)
 )
 _outputList = nconc( _outputList savedComponent) 
@@ -134,6 +134,10 @@ tmp1 = make_sevOutputStruct()
 tmp1 = (ncons nil)
 )
 tmp1->inLastSet = nil
+tmp1->updatedScriptFile = nil
+tmp1->implicit = nil
+tmp1->uniqueName = "/b"
+tmp1->inValidObject = nil
 tmp1->name = nil
 tmp1->expression = nil
 tmp1->signal = "/b"
@@ -145,7 +149,6 @@ tmp1->internalName = nil
 tmp1->masterName = nil
 tmp1->masterScriptFile = nil
 tmp1->saveScriptFile = nil
-tmp1->updatedScriptFile = nil
 tmp1->saveMasterScriptFile = nil
 tmp1->isReferenced = nil
 tmp1->lastEvalTime = nil
@@ -173,7 +176,6 @@ tmp1->value = nil
 tmp1->plot = 't
 tmp1->save = nil
 tmp1->march = nil
-tmp1->implicit = nil
 tmp1->index = 3
 tmp1->timeStamp = nil
 tmp1->graphType = nil
@@ -181,8 +183,6 @@ tmp1->yaxisLabel = nil
 tmp1->label = nil
 tmp1->yaxisUnit = nil
 tmp1->waveSpec = nil
-tmp1->uniqueName = "/b"
-tmp1->inValidObject = nil
 list(tmp1)
 )
 _outputList = nconc( _outputList savedComponent) 
@@ -196,6 +196,10 @@ tmp1 = make_sevOutputStruct()
 tmp1 = (ncons nil)
 )
 tmp1->inLastSet = nil
+tmp1->updatedScriptFile = nil
+tmp1->implicit = nil
+tmp1->uniqueName = "/select"
+tmp1->inValidObject = nil
 tmp1->name = nil
 tmp1->expression = nil
 tmp1->signal = "/select"
@@ -207,7 +211,6 @@ tmp1->internalName = nil
 tmp1->masterName = nil
 tmp1->masterScriptFile = nil
 tmp1->saveScriptFile = nil
-tmp1->updatedScriptFile = nil
 tmp1->saveMasterScriptFile = nil
 tmp1->isReferenced = nil
 tmp1->lastEvalTime = nil
@@ -235,7 +238,6 @@ tmp1->value = nil
 tmp1->plot = 't
 tmp1->save = nil
 tmp1->march = nil
-tmp1->implicit = nil
 tmp1->index = 4
 tmp1->timeStamp = nil
 tmp1->graphType = nil
@@ -243,14 +245,12 @@ tmp1->yaxisLabel = nil
 tmp1->label = nil
 tmp1->yaxisUnit = nil
 tmp1->waveSpec = nil
-tmp1->uniqueName = "/select"
-tmp1->inValidObject = nil
 list(tmp1)
 )
 _outputList = nconc( _outputList savedComponent) 
 savedComponent = nil 
 _envSaveOptions = (let
-(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38 tmp39 tmp40 tmp41)
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38 tmp39)
 tmp1 = (let
 (tmp1 tmp2)
 tmp1 = 'keepRegPcellLabel
@@ -294,6 +294,12 @@ list(tmp1 tmp2)
 )
 tmp8 = (let
 (tmp1 tmp2)
+tmp1 = 'subcktprobelvl
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp9 = (let
+(tmp1 tmp2)
 tmp1 = 'saveBySubcktInstances
 tmp2 = (let
 (tmp1)
@@ -315,15 +321,10 @@ list(tmp1)
 )
 list(tmp1 tmp2)
 )
-tmp9 = (let
+tmp10 = (let
 (tmp1 tmp2)
 tmp1 = 'saveBySubcktFrame
 tmp2 = ""
-list(tmp1 tmp2)
-)
-tmp10 = (let
-(tmp1 tmp2)
-tmp1 = 'allcapInfo
 list(tmp1 tmp2)
 )
 tmp11 = (let
@@ -520,94 +521,82 @@ list(tmp1 tmp2)
 )
 tmp27 = (let
 (tmp1 tmp2)
-tmp1 = 'sumInfo_a
+tmp1 = 'signalNames
 tmp2 = ""
 list(tmp1 tmp2)
 )
 tmp28 = (let
 (tmp1 tmp2)
-tmp1 = 'time_window_a
+tmp1 = 'timeWindow
 tmp2 = ""
 list(tmp1 tmp2)
 )
 tmp29 = (let
 (tmp1 tmp2)
-tmp1 = 'signalNames
+tmp1 = 'timeWindLabel
 tmp2 = ""
 list(tmp1 tmp2)
 )
 tmp30 = (let
 (tmp1 tmp2)
-tmp1 = 'timeWindow
-tmp2 = ""
-list(tmp1 tmp2)
-)
-tmp31 = (let
-(tmp1 tmp2)
-tmp1 = 'timeWindLabel
-tmp2 = ""
-list(tmp1 tmp2)
-)
-tmp32 = (let
-(tmp1 tmp2)
 tmp1 = 'enableTimeWindowSetup
 list(tmp1 tmp2)
 )
-tmp33 = (let
+tmp31 = (let
 (tmp1 tmp2)
 tmp1 = 'timewindFrame
 tmp2 = ""
 list(tmp1 tmp2)
 )
-tmp34 = (let
+tmp32 = (let
 (tmp1 tmp2)
 tmp1 = 'saveahdlvars
 tmp2 = ""
 list(tmp1 tmp2)
 )
-tmp35 = (let
+tmp33 = (let
 (tmp1 tmp2)
-tmp1 = 'subcktprobelvl
+tmp1 = 'probelvl
 tmp2 = ""
 list(tmp1 tmp2)
 )
-tmp36 = (let
+tmp34 = (let
 (tmp1 tmp2)
 tmp1 = 'useprobes
 tmp2 = ""
 list(tmp1 tmp2)
 )
-tmp37 = (let
+tmp35 = (let
 (tmp1 tmp2)
 tmp1 = 'currents
 tmp2 = ""
 list(tmp1 tmp2)
 )
-tmp38 = (let
+tmp36 = (let
 (tmp1 tmp2)
 tmp1 = 'nestlvl
 tmp2 = ""
 list(tmp1 tmp2)
 )
-tmp39 = (let
+tmp37 = (let
 (tmp1 tmp2)
 tmp1 = 'pwr
 tmp2 = ""
 list(tmp1 tmp2)
 )
-tmp40 = (let
+tmp38 = (let
 (tmp1 tmp2)
 tmp1 = 'save
 tmp2 = "allpub"
 list(tmp1 tmp2)
 )
-tmp41 = (let
+tmp39 = (let
 (tmp1 tmp2)
 tmp1 = 'saveFrame
 tmp2 = ""
 list(tmp1 tmp2)
 )
-list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38 tmp39 tmp40 tmp41)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38 tmp39)
 )
 savedComponent = list( _outputList _envSaveOptions ) 
 _outputList = 'unbound

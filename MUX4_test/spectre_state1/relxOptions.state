@@ -1,21 +1,14 @@
-(relxOpts ODDOSDSetupFile) ""
 (relxOpts addAdditionalArgumentForTMI) nil
-(relxOpts ageLevel) "All"
 (relxOpts ageModelType) "AgeMOS(Spectre Internal)"
-(relxOpts ageMultiMode) "AgeMOS(Spectre Internal)"
-(relxOpts ageOMIModelType) "AgeMOS(Spectre Internal)"
 (relxOpts aged_data_dir) ""
 (relxOpts aged_var_list) nil
 (relxOpts agingPointsType) "Standard aging"
-(relxOpts agingVariation) nil
 (relxOpts anaMode) "Reliability"
 (relxOpts anaModeClone) "Reliability"
-(relxOpts btiRecovery) nil
 (relxOpts checknegagingclamp) "no"
 (relxOpts checknegagingtype) "error"
 (relxOpts combinedeg) "off"
 (relxOpts compactagednetlist) "none"
-(relxOpts cycleTime) ""
 (relxOpts degCheckException) ""
 (relxOpts degRatioDevInclude) "include"
 (relxOpts degRatioDevInstance) ""
@@ -26,24 +19,17 @@
 (relxOpts degSortType) "threshold"
 (relxOpts degSortValue) ""
 (relxOpts degdatatype) "appendage"
-(relxOpts displayOMIGui) nil
 (relxOpts displayRelxpertGui) nil
 (relxOpts displayTMIGui) nil
-(relxOpts displayTMIRTSHEGui) nil
 (relxOpts doADELPostProcess) t
 (relxOpts electroParamType) "TMI Default"
-(relxOpts electroParamTypeAgeMos) "Delta Idsat"
 (relxOpts enableAgeMOS) t
 (relxOpts enableAgeMosTMI) nil
 (relxOpts enableAging) nil
 (relxOpts enableAgingForTMI) t
-(relxOpts enableBiasRunAway) nil
 (relxOpts enableDegRatio) nil
 (relxOpts enableDegSort) nil
-(relxOpts enableEMIROnStress) nil
-(relxOpts enableGAProfile) nil
 (relxOpts enableGradualAging) nil
-(relxOpts enableODDOSDSetupFile) nil
 (relxOpts enableOutputDevDegInFile) "GUI"
 (relxOpts enableOutputSubcktDegInFile) "GUI"
 (relxOpts enablePreset) nil
@@ -61,25 +47,22 @@
 (relxOpts gaAgeStepTotalStep) ""
 (relxOpts gaAgeStepType) "lin"
 (relxOpts gaAgeStepUnit) "Years"
-(relxOpts gaAlterHeadListBox) nil
+(relxOpts gaAlterHeadListBox) (nil choices nil value nil)
 (relxOpts gaAlterParam) ""
-(relxOpts gaAlterParamListBox) nil
+(relxOpts gaAlterParamListBox) (nil choices nil value nil)
 (relxOpts gaAlterTime) ""
 (relxOpts gaAlterValue) ""
 (relxOpts gaDynamicParam) nil
 (relxOpts gaDynamicTable) nil
-(relxOpts gaEarlyExit) t
 (relxOpts gaInputStressDir) ""
 (relxOpts gaIterationNum) ""
 (relxOpts gaMode) "Age points"
-(relxOpts gaMultiPlayBack) nil
 (relxOpts gaPassParam) "no"
 (relxOpts gaSaveResults) "all"
 (relxOpts gaSaveSome) ""
 (relxOpts gaSkipFresh) nil
 (relxOpts gaSkipLast) nil
 (relxOpts includeFiles) ""
-(relxOpts limitDegradation) "Real"
 (relxOpts mcMode) "singlestress"
 (relxOpts mindtemp) ""
 (relxOpts mosAgeDomain) "loglog"
@@ -88,17 +71,12 @@
 (relxOpts mosAgeModelLimit) nil
 (relxOpts mosAgeModelLimitNum) "10"
 (relxOpts mosAgeModelLimitType) "age"
-(relxOpts mosAgeModelingEffect) "Include"
 (relxOpts mosAgingTime) "10"
 (relxOpts mosAgingTimeUnit) "Years"
 (relxOpts mosAppendDeviceAge) nil
 (relxOpts mosCalcLifetime) nil
 (relxOpts mosCompactAgeModel) nil
 (relxOpts mosDeltad) "0.1"
-(relxOpts mosDeltadIdlin) "0.1"
-(relxOpts mosDeltadIdsat) "0.1"
-(relxOpts mosDeltadVtlin) "0.1"
-(relxOpts mosDeltadVtsat) "0.1"
 (relxOpts mosDevDegIdconst) ""
 (relxOpts mosDevDegIdconstwl) ""
 (relxOpts mosDevDegModels) ""
@@ -135,7 +113,6 @@
 (relxOpts mosDevDegVthConstCurrSp) nil
 (relxOpts mosDevDegVthUseId) nil
 (relxOpts mosDevDegVthUseIs) nil
-(relxOpts mosDevDegVthsat) nil
 (relxOpts mosDumpAgeModel) nil
 (relxOpts mosEffectiveModel) t
 (relxOpts mosEnableOutputDevDeg) nil
@@ -152,12 +129,9 @@
 (relxOpts mosMaskSubckt) ""
 (relxOpts mosMinAge) ""
 (relxOpts mosMode) (t t t)
-(relxOpts mosModelsInSch) ""
 (relxOpts mosModifyNetlist) nil
-(relxOpts mosOutputBiasVoltage) nil
 (relxOpts mosOutputDevDegInFilePath) ""
 (relxOpts mosOutputSubcktDegInFilePath) ""
-(relxOpts mosSubcktInSch) ""
 (relxOpts mosVthMethod) "calculate"
 (relxOpts nativeMode) "Spectre native"
 (relxOpts otherRXOptions) ""
@@ -190,17 +164,12 @@
 (relxOpts reportSubcktDegradation) nil
 (relxOpts saAgeStepOrTotalStep) ""
 (relxOpts saStepType) "Total steps"
-(relxOpts scaleMode) "Original"
-(relxOpts showDegHideAgeLevel) ""
-(relxOpts showOutputModelName) nil
 (relxOpts showunageddevices) "limit"
 (relxOpts simModeFile) "input.bs0"
 (relxOpts simModeType) "all"
-(relxOpts simmodeMapping) ""
 (relxOpts standardAgeType) "Age points"
 (relxOpts stress_data_dir) ""
 (relxOpts stress_var_list) nil
-(relxOpts temp) ""
 (relxOpts tmiAgingType) "TMI Aging"
 (relxOpts tmiBTI) ""
 (relxOpts tmiHCI) ""
