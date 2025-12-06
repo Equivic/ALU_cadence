@@ -1,0 +1,92 @@
+@(#)$CDS: LVS version 6.1.8-64b 04/16/2019 23:39 (ip-172-18-22-52) $
+
+Command line: /eda/cadence/Legacy/IC618_030/tools.lnx86/dfII/bin/64bit/LVS -dir /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP -l -s -t /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/layout /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/layout/netlist
+       count
+        10              nets
+        5               terminals
+        6               pmos
+        6               nmos
+
+    Net-list summary for /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/schematic/netlist
+       count
+        10              nets
+        5               terminals
+        6               pmos
+        6               nmos
+
+
+    Terminal correspondence points
+    N5        N4        GND
+    N8        N6        IN1
+    N7        N3        IN2
+    N6        N9        OUT
+    N9        N1        VDD
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  12      12     
+        total                   12      12     
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  10      10     
+        total                   10      10     
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   5       5      
+
+
+Probe files from /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
