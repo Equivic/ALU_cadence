@@ -1,0 +1,2 @@
+global error:
+The property 'connectivityLastUpdated' is not of type int on ( MUX4 layout ) in library ALU_KP.

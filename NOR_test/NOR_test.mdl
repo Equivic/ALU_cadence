@@ -1,0 +1,18 @@
+ 
+simulator lang=spectre
+
+; Include your NOR testbench netlist
+include "./netlist.scs"
+
+parameters A=0 B=0
+tstop = 5ns
+
+analysis tran tran stop=tstop
+
+; Sweep B for each A
+sweep_b sweep param=B values=[0 1]
+sweep_a sweep param=A values=[0 1]
+
+run sweep_a(sweep_b)
+
+print OUT = value(V(OUT) ?time=tstop)
