@@ -1,32 +1,43 @@
 @(#)$CDS: LVS version 6.1.8-64b 04/16/2019 23:39 (ip-172-18-22-52) $
 
-Command line: /eda/cadence/Legacy/IC618_030/tools.lnx86/dfII/bin/64bit/LVS -dir /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP -l -s -t /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/layout /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/schematic
+Command line: /eda/cadence/Legacy/IC618_030/tools.lnx86/dfII/bin/64bit/LVS -dir /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/LVS -l -s -t /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/LVS/layout /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/LVS/schematic
 Like matching is enabled.
 Net swapping is enabled.
 Using terminal names as correspondence points.
 Compiling Diva LVS rules...
 
-    Net-list summary for /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/layout/netlist
+    Net-list summary for /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/LVS/layout/netlist
        count
-        10              nets
-        5               terminals
-        6               pmos
-        6               nmos
+        148             nets
+        16              terminals
+        136             pmos
+        136             nmos
 
-    Net-list summary for /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/schematic/netlist
+    Net-list summary for /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/LVS/schematic/netlist
        count
-        10              nets
-        5               terminals
-        6               pmos
-        6               nmos
+        148             nets
+        16              terminals
+        136             pmos
+        136             nmos
 
 
     Terminal correspondence points
-    N5        N4        GND
-    N8        N6        IN1
-    N7        N3        IN2
-    N6        N9        OUT
-    N9        N1        VDD
+    N135      N5        A0
+    N134      N10       A1
+    N133      N0        A2
+    N132      N4        A3
+    N147      N15       B0
+    N146      N3        B1
+    N145      N1        B2
+    N144      N7        B3
+    N137      N13       GND
+    N140      N6        Q0
+    N139      N8        Q1
+    N138      N14       Q2
+    N136      N2        Q3
+    N142      N12       Sel0
+    N141      N11       Sel1
+    N143      N9        VDD
 
 Devices in the netlist but not in the rules:
         pcapacitor
@@ -41,24 +52,24 @@ The net-lists match.
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  12      12     
-        total                   12      12     
+        active                  272     272    
+        total                   272     272    
 
                                   nets
         un-matched              0       0      
         merged                  0       0      
         pruned                  0       0      
-        active                  10      10     
-        total                   10      10     
+        active                  148     148    
+        total                   148     148    
 
                                 terminals
         un-matched              0       0      
         matched but
         different type          0       0      
-        total                   5       5      
+        total                   16      16     
 
 
-Probe files from /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/schematic
+Probe files from /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/LVS/schematic
 
 devbad.out:
 
@@ -75,7 +86,7 @@ prunedev.out:
 audit.out:
 
 
-Probe files from /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/layout
+Probe files from /eda/cad_run/studentas2/NCSU_CDK_1.6.0b/ALU_KP/LVS/layout
 
 devbad.out:
 
